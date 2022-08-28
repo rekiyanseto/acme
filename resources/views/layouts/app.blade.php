@@ -35,7 +35,7 @@
 
     <!-- Icons -->
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    
+
     <!-- Small Ionicons Fixes for AdminLTE -->
     <style>
         html {
@@ -51,6 +51,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/panzoom.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <script src="https://unpkg.com/smartphoto@1.1.0/js/smartphoto.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/smartphoto@1.1.0/css/smartphoto.min.css">
 
     <!-- DevExtreme theme -->
     <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/22.1.4/css/dx.light.css">
@@ -89,7 +93,7 @@
 
     <!-- DevExtreme library -->
     <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/22.1.4/js/dx.all.js"></script>
-    
+
     @livewireStyles
 </head>
 
