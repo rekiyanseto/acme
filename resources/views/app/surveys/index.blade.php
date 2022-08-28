@@ -58,12 +58,6 @@
                                 <th class="text-left">
                                     @lang('crud.surveys.inputs.sub_category_id')
                                 </th>
-                                <th class="text-left">
-                                    Survey Result
-                                </th>
-                                <th class="text-left">
-                                    Setlement
-                                </th>
                                 <th class="text-center">
                                     @lang('crud.common.actions')
                                 </th>
@@ -99,55 +93,6 @@
                                     </td>
                                     <td>
                                         {{ optional($survey->subCategory)->category_name ?? '-' }}
-                                    </td>
-                                    <td class="text-left">
-                                        @php
-                                            $surveyResults = optional($survey->surveyResults)[sizeOf($survey->surveyResults) - 1]->survey_result_condition ?? '-';
-                                            $color = '';
-                                            switch ($surveyResults) {
-                                                case 'Oke Running Well':
-                                                    $color = 'primary';
-                                                    break;
-                                                case 'Oke Standby':
-                                                    $color = 'success';
-                                                    break;
-                                                case 'Dengan Catatan':
-                                                    $color = 'warning';
-                                                    break;
-                                                case 'Tidak Beroperasi':
-                                                    $color = 'danger';
-                                                    break;
-                                                default:
-                                                    $color = 'secondary';
-                                                    break;
-                                            }
-                                        @endphp
-                                        <p class="badge badge-{{ $color }}">{{ $surveyResults ?? '-' }}</p>
-                                    </td>
-                                    <td class="text-left">
-                                        @php
-                                            $settlementByBusinessUnits = optional($survey->settlementByBusinessUnits)[sizeOf($survey->settlementByBusinessUnits) - 1]->condition ?? '-';
-                                            $color = '';
-                                            switch ($settlementByBusinessUnits) {
-                                                case 'Oke Running Well':
-                                                    $color = 'primary';
-                                                    break;
-                                                case 'Oke Standby':
-                                                    $color = 'success';
-                                                    break;
-                                                case 'Dengan Catatan':
-                                                    $color = 'warning';
-                                                    break;
-                                                case 'Tidak Beroperasi':
-                                                    $color = 'danger';
-                                                    break;
-                                                default:
-                                                    $color = 'secondary';
-                                                    break;
-                                            }
-                                        @endphp
-                                        <p class="badge badge-{{ $color }}">{{ $settlementByBusinessUnits ?? '-' }}
-                                        </p>
                                     </td>
                                     <td class="text-center" style="width: 134px;">
                                         <div role="group" aria-label="Row Actions" class="btn-group">
